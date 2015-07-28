@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+	head
+		title= BubbleGame
+		link(href='main.css', rel='stylesheet')
+		script(src='game.js')
+	body
+		#gameplay
+			#start
+				button.one-player.pl(
+  			  	type='button'
+				data-number=1
+    			onclick="newGame(this.getAttribute('data-number'))"
+    			) 1 player
+				button.two-player.pl(
+  	  			type='button'
+				data-number=2
+    			onclick="newGame(this.getAttribute('data-number'))"
+    			) 2 players
+				#tips Player 1 use arrow keys - Player 2 use w, a, s, d
+			#end
+				.title Looser
