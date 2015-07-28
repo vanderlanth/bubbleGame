@@ -1,0 +1,24 @@
+{
+  "name": "bubblegame",
+  "version": "1.0.0",
+  "description": "Remake of agar.io to discover and learn how Vanilla JS work.",
+  "main": "main.jade",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas11/bubbleGame.git"
+  },
+  "author": "van der lanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas11/bubbleGame/issues"
+  },
+  "homepage": "https://github.com/nicolas11/bubbleGame#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-sass": "^2.0.4"
+  }
+}
