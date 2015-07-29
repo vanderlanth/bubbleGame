@@ -70,7 +70,7 @@ function newDots(amount, dotMinSize) {
 				left = random(20, window.innerWidth-20);
 				size = random(dotMinSize, dotMinSize + i);
 				hsl = random(0, 360);
-			
+
 				dot = new Dot();
 				dot.dotSize(size);
 				dot.setColor('hsl(' + hsl + ',90%,70%)');
@@ -89,6 +89,17 @@ function newDots(amount, dotMinSize) {
 				dots.push(dot);
 				gameplay.appendChild(dot.getElem());
 		};
+	console.log(dots.length);
+}
+
+function removeDots(){
+	var i, thisDot;
+	for(i in dots){
+		thisDot = dots[i];
+		gameplay.removeChild(thisDot.getElem());
+	}
+	dots.splice(0, dots.length);
+	console.log(dots.length);
 }
 
 
@@ -329,15 +340,19 @@ function theend() {
 };
 
 
+function restart(){
+	removeDots();
+  start.style.left = 0 + '%';
+	end.style.left = 100 + '%';
+};
+
+
 // ----------------------------------- events -----------------------------------
-
-
-start.addEventListener("click", newGame, false);
 
 
 function keypress(type, keycode) {
 		var i, isPress = (type === 'keydown');
-	
+
 		for (i in players) {
 				if (keycode === players[i].keyUp) {
 						players[i].controls.up = isPress;
@@ -413,4 +428,3 @@ window.addEventListener('keydown', function(event){
 		konami.i = 0;
 	}
 }, false);
-
