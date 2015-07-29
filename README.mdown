@@ -1,0 +1,17 @@
+# Bubble Game
+A little and simplified remake of the online game [Agar.io](http://agar.io/ "Agar.io").
+Made to discover and learn Vanilla JS. Hope you like it !
+
+# Demo
+If you want to play directly without download, here's the
+[Codepen of the game](http://codepen.io/vanderlanth/full/BNGjrE "Bubble Game").
+
+# Installation
+1. Download the project
+2. Open your terminal
+3. Go to the path of the project
+4. npm install
+5. Have fun !
+
+npm install
+```
